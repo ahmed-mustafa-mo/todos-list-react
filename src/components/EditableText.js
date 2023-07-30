@@ -14,8 +14,6 @@ const EditableText = ({ todo, onSave }) => {
 
   const handleInputBlur = () => {
     setEditing(false);
-    // console.log(todo.title, inputText)
-    // if(todo.title === inputText) return
 
     todo.title = inputText
     onSave(todo);
